@@ -4,13 +4,15 @@ Proyek edukasi dan penelitian Reneldis Mumas, 2026. Website informasi Next.js te
 
 ## Struktur
 
+Folder kerja utama: `joki/gunung-kawi-vt/`, memakai branch `main` pada repository `Yosuanry0812/gunung-kawi-vt`. Seluruh pengembangan dilakukan dari folder ini; tidak memerlukan checkout kedua.
+
 - `01-gunung-kawi-web/`: satu-satunya aplikasi Next.js.
 - `02-gunung-kawi-3dvista/`: penyimpanan lokal panorama, audio, proyek, ekspor, dan cadangan; media besar diabaikan Git.
 - `03-dokumen/`: proposal, sumber konten, panduan integrasi, inventaris, dan dokumen pengujian.
 
 ## Jalankan
 
-Dari folder induk `Gunung Kawi VT`, jalankan:
+Dari folder induk `gunung-kawi-vt`, jalankan:
 
 ```powershell
 pnpm dev
@@ -40,7 +42,7 @@ Buka `http://localhost:3000`; root mengalihkan ke `/id`. `.env.local` bersifat o
 
 ## Deployment Vercel
 
-Repository: `Yosuanry0812/Gunung-Kawi-VT`, branch produksi `main`.
+Repository: `Yosuanry0812/gunung-kawi-vt`, branch produksi `main`.
 Project Vercel: `gunung-kawi-vt` pada team `yosuanry-simbolons-projects`.
 
 - Framework: Next.js; Node.js `24.x`.
@@ -63,7 +65,7 @@ Proposal dan foto dokumentasi proyek belum tersedia. Website memakai empat foto 
 
 ## Sesi AI hemat konteks
 
-Aturan bersama ada di [AGENTS.md](AGENTS.md); Claude Code membacanya melalui [CLAUDE.md](CLAUDE.md). [State utama](../../doc/state/joki/Gunung%20Kawi%20VT.md) menyimpan progres; jangan memuat ulang semua dokumen/source.
+Aturan bersama ada di [AGENTS.md](AGENTS.md); Claude Code membacanya melalui [CLAUDE.md](CLAUDE.md). [State utama](../../doc/state/joki/gunung-kawi-vt.md) menyimpan progres; jangan memuat ulang semua dokumen/source.
 
 Dari folder proyek:
 
@@ -77,7 +79,7 @@ Setelah implementasi dan pengujian, AI memperbarui state utama. Hook Stop lalu m
 
 Graph berada di `graphify-out/graph.json`; tampilan interaktif `graphify-out/graph.html`. Graph pembaruan otomatis mencakup struktur kode; dokumen dibaca terarah sesuai tugas dan belum mendapat ekstraksi semantik penuh. `.graphifyignore` membatasi dependency, build/cache, rahasia, proposal, dan media besar.
 
-Codex dan Codex di Agentty memakai hook pengguna yang sama: SessionStart/UserPromptSubmit menuju `.hooks/ai-context.mjs`; Stop workspace mendelegasikan sesi proyek ini ke handler tersebut. Dari root `Sistem/`, pilih `proyek "joki/Gunung Kawi VT"`; binding disimpan per ID sesi di `.ai-cache/sessions/`, sehingga pane lain tetap terpisah. Pilihan proyek lain menonaktifkan binding lama. Startup/resume/compact memasukkan petunjuk singkat untuk sesi yang sesuai. `.codex/hooks.json` lokal sengaja kosong agar hook tidak berjalan dua kali.
+Codex dan Codex di Agentty memakai hook pengguna yang sama: SessionStart/UserPromptSubmit menuju `.hooks/ai-context.mjs`; Stop workspace mendelegasikan sesi proyek ini ke handler tersebut. Dari root `Sistem/`, pilih `proyek "joki/gunung-kawi-vt"`; binding disimpan per ID sesi di `.ai-cache/sessions/`, sehingga pane lain tetap terpisah. Pilihan proyek lain menonaktifkan binding lama. Startup/resume/compact memasukkan petunjuk singkat untuk sesi yang sesuai. `.codex/hooks.json` lokal sengaja kosong agar hook tidak berjalan dua kali.
 
 Agentty `autoWorktree` juga didukung: handler mencocokkan cwd dengan `git worktree list` repository ini, lalu menjalankan pemeriksaan/pembaruan dengan cwd worktree tersebut. Graph dan checkpoint tidak ditulis ke checkout lain. State utama tetap memakai path absolut di workspace asal yang diberikan dalam konteks hook; tidak mengikuti `../../doc` dari lokasi worktree.
 
