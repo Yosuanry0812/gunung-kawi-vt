@@ -1,6 +1,6 @@
 ﻿# Status Gunung Kawi VT
 
-State utama lintas sesi: [doc/state/joki/Gunung Kawi VT.md](../../../doc/state/joki/Gunung%20Kawi%20VT.md).
+State utama lintas sesi: [doc/state/joki/gunung-kawi-vt.md](../../../doc/state/joki/gunung-kawi-vt.md).
 Baca satu state tersebut untuk progres, hasil uji, batasan, dan next step. Berkas ini hanya penunjuk agar tidak ada dua state yang harus dipelihara.
 
 - Website Next.js: `../01-gunung-kawi-web/`.

@@ -12,7 +12,12 @@ export function PhotoGallery({
   locale: Locale;
   priority?: boolean;
 }) {
-  const [active, setActive] = useState(2);
+  const [active, setActive] = useState(() =>
+    Math.max(
+      0,
+      photography.findIndex((photo) => photo.id === "gunung-kawi-07"),
+    ),
+  );
   const [expanded, setExpanded] = useState(false);
   const dialog = useRef<HTMLDialogElement>(null);
   const previousOverflow = useRef("");
@@ -59,7 +64,12 @@ export function PhotoGallery({
   );
   return (
     <div className="photo-gallery">
-      <figure className="media-panel gallery-photo">
+      <figure
+        className="media-panel gallery-photo"
+        onClick={(event) => {
+          if (!(event.target as HTMLElement).closest("a, button")) openPhoto();
+        }}
+      >
         <Image
           src={photo.publicPath}
           alt={photo.alt[locale]}
@@ -85,7 +95,7 @@ export function PhotoGallery({
             {id ? "Gunung Kawi, dalam bingkai" : "A closer look at Gunung Kawi"}
           </span>
           <a href={photo.sourcePage} target="_blank" rel="noopener noreferrer">
-            {photo.author} · {photo.license}
+            {photo.author}, {photo.license}
           </a>
         </figcaption>
       </figure>
@@ -140,7 +150,7 @@ export function PhotoGallery({
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                {photo.author} · {photo.license}
+                {photo.author}, {photo.license}
               </a>
             </figcaption>
           </figure>

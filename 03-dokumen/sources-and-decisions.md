@@ -4,7 +4,7 @@ Tanggal audit: 25 Oktober 2026, Asia/Makassar.
 
 ## Kondisi awal
 
-Working directory `C:\Users\yosuanry simbolon\Sistem\joki\Gunung Kawi VT` kosong dan belum menjadi repository Git. Tidak ada file pengguna dipindah atau dihapus. Pengguna mengonfirmasi proposal dan foto asli belum dimasukkan. Folder khusus disediakan sesuai permintaan.
+Working directory `C:\Users\yosuanry simbolon\Sistem\joki\gunung-kawi-vt` kosong dan belum menjadi repository Git. Tidak ada file pengguna dipindah atau dihapus. Pengguna mengonfirmasi proposal dan foto asli belum dimasukkan. Folder khusus disediakan sesuai permintaan.
 
 ## Kebutuhan
 

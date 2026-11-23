@@ -41,7 +41,7 @@ test("HTTP localhost is development only", () => {
   }
   assert.equal(validateTourUrl("http://localhost.evil.test", false), null);
 });
-test("all five page keys round-trip in both locales", () => {
+test("all four page keys round-trip in both locales", () => {
   for (const locale of locales)
     for (const key of pageKeys) {
       assert.equal(resolvePage(locale, slugs[locale][key]), key);

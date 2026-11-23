@@ -3,7 +3,6 @@ export const id = {
     home: "Beranda",
     history: "Sejarah",
     location: "Lokasi",
-    information: "Informasi",
     tour: "Virtual Tour",
   },
   common: {
@@ -22,28 +21,29 @@ export const id = {
     missing: "Foto asli belum tersedia",
     missingDetail: "Ruang ini disiapkan untuk dokumentasi Gunung Kawi.",
     photo: "Dokumentasi kawasan",
+    zoomPhoto: "Perbesar foto",
+    closePhoto: "Tutup foto",
     photoCredit: "Foto",
-    photoCredits: "Kredit foto",
     planned: "Dalam persiapan",
     tourLaunch: "Mulai Virtual Tour 360°",
     tourExternal:
       "Mulai Virtual Tour 360°, membuka situs panorama pada tab baru",
     tourPending: "Pengalaman Virtual Tour sedang dipersiapkan.",
     tourPendingDetail:
-      "Panorama asli belum tersedia. Sementara itu, kenali kawasan melalui sejarah dan informasi kunjungan.",
+      "Panorama asli belum tersedia. Sementara itu, kenali kawasan melalui sejarah dan lokasinya.",
     error: "Halaman belum dapat ditampilkan",
     errorDetail: "Terjadi kendala saat memuat halaman. Silakan coba lagi.",
     retry: "Coba lagi",
     notFound: "Halaman tidak ditemukan",
     notFoundDetail:
       "Alamat ini tidak tersedia. Lanjutkan perjalanan dari beranda.",
-    loading: "Menyiapkan halaman…",
+    loading: "Menyiapkan halaman...",
     photoAlt: "Dokumentasi asli Gunung Kawi Tampaksiring",
-    buildNotice: "Proyek edukasi & penelitian · Dalam pengembangan",
+    buildNotice: "Proyek edukasi dan penelitian, Dalam pengembangan",
   },
   home: {
-    brandSubtitle: "Warisan budaya · Tampaksiring, Bali",
-    eyebrow: "Warisan Budaya • Tampaksiring, Bali",
+    brandSubtitle: "Warisan budaya, Tampaksiring, Bali",
+    eyebrow: "Warisan Budaya, Tampaksiring, Bali",
     title: "Selamat Datang di Warisan Budaya",
     titleAccent: "Gunung Kawi Tampaksiring",
     description:
@@ -57,7 +57,7 @@ export const id = {
       "Di kawasan Tampaksiring, tebing cadas dan aliran Sungai Pakerisan menjadi bagian dari lanskap Gunung Kawi. Candi tebing dan ceruk pertapaan mengajak kita mengenal jejak budaya Bali Kuno.",
     introNote:
       "Sebuah perjalanan untuk memahami tempat, cerita, dan warisan yang dijaga.",
-    highlightsEyebrow: "Ruang & lanskap",
+    highlightsEyebrow: "Ruang dan lanskap",
     highlightsTitle: "Menyusuri kawasan,\nmenemukan cerita.",
     highlightsDescription:
       "Kenali bagian-bagian kawasan sebelum memulai perjalanan virtual Anda.",
@@ -93,13 +93,6 @@ export const id = {
       description:
         "Temukan Gunung Kawi Tampaksiring dan kenali perjalanan menuju kawasannya.",
     },
-    information: {
-      eyebrow: "Sebelum berkunjung",
-      title: "Informasi",
-      accent: "Pengunjung",
-      description:
-        "Persiapkan kunjungan yang nyaman, jaga kelestarian situs, dan hormati tradisi setempat.",
-    },
     tour: {
       eyebrow: "Pengalaman 360°",
       title: "Virtual Tour",
@@ -108,15 +101,9 @@ export const id = {
         "Bersiap mengenal Gunung Kawi dari sudut pandang baru melalui panorama 360°.",
     },
   },
-  historyPage: {
-    intro: "Candi tebing dan ruang pertapaan",
-    sourceNote:
-      "Ringkasan awal menggunakan sumber pemerintah di bawah. Proposal penelitian belum tersedia untuk diperiksa; penyesuaian terhadap BAB I dan BAB III akan dilakukan setelah dokumen dimasukkan.",
-    conservationTitle: "Warisan untuk dijaga bersama",
-    conservationText:
-      "Merawat situs berarti menghargai tinggalan arkeologi, lingkungan sungai, dan praktik budaya masyarakat. Saat berkunjung, ikuti arahan petugas dan hindari menyentuh atau merusak permukaan candi.",
-  },
   locationPage: {
+    addressLabel: "Alamat",
+    coordinatesLabel: "Koordinat",
     mapTitle: "Temukan di peta",
     mapDescription:
       "Banjar Penaka, Desa Tampaksiring, Kecamatan Tampaksiring, Kabupaten Gianyar, Bali.",
@@ -132,49 +119,11 @@ export const id = {
       "Peta belum dapat dimuat. Buka langsung di Google Maps atau coba lagi.",
     retryMap: "Coba lagi",
     mapLoading:
-      "Memuat peta… Jika peta tidak muncul, buka Google Maps melalui tautan di bawah.",
-    accessTitle: "Kenali perjalanan Anda",
-    accessText:
-      "Perjalanan di dalam kawasan melibatkan jalur berjalan kaki dan anak tangga. Pertimbangkan kondisi fisik dan cuaca, gunakan alas kaki yang sesuai, serta tanyakan kondisi akses terbaru kepada petugas setempat.",
-    environmentTitle: "Lanskap Pakerisan",
-    environmentText:
-      "Tebing cadas, aliran sungai, dan lingkungan hijau membingkai kawasan Gunung Kawi. Kondisi jalur dapat berubah; informasi pada halaman ini merupakan pengantar, bukan petunjuk keselamatan lapangan.",
-  },
-  informationPage: {
-    careTitle: "Hormati kegiatan dan tradisi setempat",
-    preserveTitle: "Jaga kelestarian kawasan",
-    permissionTitle: "Dokumentasi dengan penuh hormat",
-    visitTitle: "Rencanakan kunjungan Anda",
-    visitText:
-      "Harga tiket, jam operasional, kontak pengelola, dan ketentuan akses belum diverifikasi untuk proyek ini. Konfirmasikan langsung kepada pengelola sebelum berkunjung.",
-    ethicsTitle: "Menjadi tamu yang menghargai tempat",
-    ethics: [
-      "Jaga ketenangan dan hormati kegiatan keagamaan yang sedang berlangsung.",
-      "Ikuti arahan petugas tentang pakaian dan area yang boleh dimasuki.",
-      "Jaga kebersihan; bawa kembali sampah Anda.",
-      "Jangan memanjat, mencoret, atau merusak struktur dan permukaan candi.",
-      "Mintalah izin sebelum mengambil gambar orang atau kegiatan keagamaan.",
-    ],
-    planTitle: "Mengenali titik kawasan",
-    planText:
-      "Daftar berikut merupakan rencana inventaris dokumentasi dari spesifikasi proyek. Ketersediaan fasilitas dan batas akses harus dikonfirmasi melalui survei, bukan dianggap sebagai denah resmi.",
-    facilitiesTitle: "Fasilitas yang perlu diverifikasi",
-    facilities: [
-      "Area Istirahat",
-      "Penjualan Souvenir",
-      "Papan Informasi",
-      "Loket Tiket",
-      "Parkir",
-    ],
-    facilitiesNote:
-      "Daftar pemeriksaan lapangan; status operasional belum dikonfirmasi.",
-    mapMissing: "Denah resmi belum tersedia",
-    mapDetail:
-      "Tempat untuk denah kawasan yang telah diverifikasi oleh pengelola.",
+      "Memuat peta... Jika peta tidak muncul, buka Google Maps melalui tautan di bawah.",
   },
   tourPage: {
     previewTitle: "Mengenal kawasan sebelum menjelajah",
-    previewLabel: "Foto kawasan · Bukan panorama 360°",
+    previewLabel: "Foto kawasan, Bukan panorama 360°",
     previewText:
       "Foto di halaman ini memperkenalkan kawasan Gunung Kawi. Panorama interaktif akan tersedia setelah dokumentasi 360° dan produksi tur selesai.",
     featuresTitle: "Dirancang untuk perjalanan yang bermakna",
@@ -199,20 +148,12 @@ export const id = {
     address: "Tampaksiring, Gianyar\nBali, Indonesia",
     project:
       "Proyek edukasi dan penelitian Reneldis Mumas, 2026. Website ini tidak menyatakan diri sebagai situs resmi pengelola.",
-    credit: "Gunung Kawi Tampaksiring · Gianyar, Bali",
-  },
-  photography: {
-    title: "Kredit foto",
-    description:
-      "Foto asli Gunung Kawi berikut digunakan sementara dengan lisensi terbuka, sambil menunggu dokumentasi proyek. Foto-foto ini bukan panorama 360°.",
-    changes:
-      "Dioptimasi ukurannya, dikonversi ke WebP, dan dapat dipotong oleh bingkai tampilan. Isi foto tidak direkayasa.",
+    credit: "Gunung Kawi Tampaksiring, Gianyar, Bali",
   },
   metadata: {
-    home: "Gunung Kawi — Warisan Budaya & Virtual Tour",
+    home: "Gunung Kawi: Warisan Budaya dan Virtual Tour",
     history: "Sejarah Gunung Kawi",
     location: "Lokasi Gunung Kawi Tampaksiring",
-    information: "Informasi Kunjungan Gunung Kawi",
     tour: "Virtual Tour 360° Gunung Kawi",
   },
 };

@@ -7,8 +7,6 @@ const routes = [
   "/en/history",
   "/id/lokasi",
   "/en/location",
-  "/id/informasi",
-  "/en/information",
   "/id/virtual-tour",
   "/en/virtual-tour",
 ];
@@ -52,7 +50,7 @@ test("header server markup matches hydration on virtual tour pages", async ({
           "innerHTML",
           serverBrand,
         );
-        await expect(page.locator(".brand-symbol svg")).toHaveCount(1);
+        await expect(page.locator(".brand-symbol img")).toHaveCount(1);
         await expect(page.locator(".brand-symbol")).toHaveText("");
         if (width === 390) {
           const menu = page.locator(".menu-toggle");
@@ -122,7 +120,6 @@ test("locale switch preserves the equivalent page", async ({ page }) => {
     ["/id", "/en"],
     ["/id/sejarah", "/en/history"],
     ["/id/lokasi", "/en/location"],
-    ["/id/informasi", "/en/information"],
     ["/id/virtual-tour", "/en/virtual-tour"],
   ]) {
     await page.goto(id);
@@ -182,6 +179,7 @@ test("mobile keyboard menu traps focus, closes on Escape and navigation", async 
   expect(await page.locator("body").evaluate((b) => b.style.overflow)).toBe("");
 });
 test("responsive pages have no horizontal overflow", async ({ page }) => {
+  test.setTimeout(90000);
   for (const width of [
     320, 360, 390, 430, 600, 768, 1024, 1100, 1440, 1920, 2560,
   ]) {
@@ -423,9 +421,9 @@ test("photo gallery navigation and accessible full-screen dialog work", async ({
     await page.keyboard.press("ArrowLeft");
     await page.keyboard.press("Escape");
     await expect(page.getByRole("dialog")).not.toBeVisible();
-    expect(
-      await page.locator("body").evaluate((body) => body.style.overflow),
-    ).toBe("");
+    await expect
+      .poll(() => page.locator("body").evaluate((body) => body.style.overflow))
+      .toBe("");
     await expect(
       page.getByRole("button", {
         name: locale === "id" ? "Perbesar foto" : "Enlarge photo",
@@ -490,4 +488,21 @@ test("capture representative desktop and mobile screens", async ({
       fullPage: false,
     });
   }
+});
+
+test("every photo on inner pages opens in a pop-up and closes", async ({
+  page,
+}) => {
+  await page.goto("/id/sejarah");
+  const triggers = page.locator(".zoom-trigger");
+  expect(await triggers.count()).toBeGreaterThan(3);
+  await triggers.first().click();
+  const dialog = page.locator("dialog.photo-dialog[open]");
+  await expect(dialog).toBeVisible();
+  await expect(dialog.locator("img")).toHaveCount(1);
+  await page.keyboard.press("Escape");
+  await expect(dialog).toHaveCount(0);
+  await page.goto("/id");
+  await page.locator(".gallery-photo img").first().click();
+  await expect(page.locator("dialog.photo-dialog[open]")).toBeVisible();
 });

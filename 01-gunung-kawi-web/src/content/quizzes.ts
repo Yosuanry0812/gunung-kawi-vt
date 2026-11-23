@@ -4,7 +4,7 @@ export const quizDrafts = [
     id: "Q01",
     status: "draft",
     sceneId: "P03",
-    source: "BPCB Bali — Situs Gunung Kawi",
+    source: "Situs Gunung Kawi (BPCB Bali)",
     question: {
       id: "Sungai apa yang menjadi bagian dari lanskap Gunung Kawi?",
       en: "Which river is part of the Gunung Kawi landscape?",

@@ -14,7 +14,7 @@ const sans = Geist({
 export const metadata: Metadata = {
   metadataBase: new URL(getSiteOrigin()),
   applicationName: "Gunung Kawi",
-  icons: { icon: "/icon.svg" },
+  icons: { icon: "/logo.png" },
 };
 export const dynamicParams = false;
 export function generateStaticParams() {

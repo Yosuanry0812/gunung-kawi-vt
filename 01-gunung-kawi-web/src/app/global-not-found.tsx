@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import "./globals.css";
 export const metadata: Metadata = {
-  title: "404 — Gunung Kawi",
+  title: "404 Gunung Kawi",
   robots: { index: false, follow: true },
 };
 export default function GlobalNotFound() {

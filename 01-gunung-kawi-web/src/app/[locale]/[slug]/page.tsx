@@ -1,10 +1,5 @@
 import { notFound } from "next/navigation";
-import {
-  HistoryPage,
-  InformationPage,
-  LocationPage,
-  TourPage,
-} from "@/components/pages";
+import { HistoryPage, LocationPage, TourPage } from "@/components/pages";
 import {
   isLocale,
   locales,
@@ -44,7 +39,6 @@ export default async function Page({
   const Component = {
     history: HistoryPage,
     location: LocationPage,
-    information: InformationPage,
     tour: TourPage,
   }[page];
   return <Component locale={locale} />;

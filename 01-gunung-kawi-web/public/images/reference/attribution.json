@@ -48,30 +48,6 @@
     "visuallyVerified": true
   },
   {
-    "id": "gunung-kawi-03",
-    "file": "gunung-kawi-03.webp",
-    "publicPath": "/images/reference/gunung-kawi-03.webp",
-    "sourceTitle": "File:Gunung Kawi Temple in Bali.jpg",
-    "sourcePage": "https://commons.wikimedia.org/wiki/File:Gunung_Kawi_Temple_in_Bali.jpg",
-    "sourceOriginal": "https://upload.wikimedia.org/wikipedia/commons/5/52/Gunung_Kawi_Temple_in_Bali.jpg",
-    "author": "www.Pinterpandai.com",
-    "license": "CC BY 3.0",
-    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
-    "changes": "Resized to fit within 1440 pixels wide and recompressed as WebP (quality 74). A decorative 960-pixel-wide background variant uses quality 48. No content alteration.",
-    "width": 1440,
-    "height": 810,
-    "bytes": 244386,
-    "subject": "Five rock-cut shrines at Gunung Kawi Tampaksiring, with water spouts in the foreground.",
-    "projectDocumentation": false,
-    "temporaryReference": true,
-    "accessed": "2026-10-25",
-    "alt": {
-      "id": "Deretan lima candi tebing Gunung Kawi Tampaksiring dengan pancuran air di depannya.",
-      "en": "Five rock-cut shrines at Gunung Kawi Tampaksiring, with water spouts in the foreground."
-    },
-    "visuallyVerified": true
-  },
-  {
     "id": "gunung-kawi-rice-fields",
     "file": "gunung-kawi-rice-fields.webp",
     "publicPath": "/images/reference/gunung-kawi-rice-fields.webp",
@@ -92,6 +68,126 @@
     "alt": {
       "id": "Persawahan di akses masuk kawasan Gunung Kawi Tampaksiring.",
       "en": "Rice terraces by the entrance to Gunung Kawi Tampaksiring."
+    },
+    "visuallyVerified": true
+  },
+  {
+    "id": "gunung-kawi-05",
+    "file": "gunung-kawi-05.webp",
+    "publicPath": "/images/reference/gunung-kawi-05.webp",
+    "sourceTitle": "File:Gunung Kawi, Tampaksiring, Bali (492096076).jpg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Gunung_Kawi,_Tampaksiring,_Bali_(492096076).jpg",
+    "sourceOriginal": "https://upload.wikimedia.org/wikipedia/commons/3/31/Gunung_Kawi%2C_Tampaksiring%2C_Bali_%28492096076%29.jpg",
+    "author": "yeowatzup",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "changes": "Resized to fit within 1440 pixels wide and recompressed as WebP (quality 74). A decorative 960-pixel-wide background variant uses quality 48. No content alteration.",
+    "width": 1440,
+    "height": 1080,
+    "bytes": 516516,
+    "subject": "Two candi in arched niches at Gunung Kawi, shown in black and white.",
+    "projectDocumentation": false,
+    "temporaryReference": true,
+    "accessed": "2026-11-24",
+    "alt": {
+      "id": "Dua candi dalam ceruk melengkung di Gunung Kawi, difoto hitam putih.",
+      "en": "Two candi in arched niches at Gunung Kawi, shown in black and white."
+    },
+    "visuallyVerified": true
+  },
+  {
+    "id": "gunung-kawi-06",
+    "file": "gunung-kawi-06.webp",
+    "publicPath": "/images/reference/gunung-kawi-06.webp",
+    "sourceTitle": "File:Gunung Kawi, Tampaksiring, Bali (492096070).jpg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Gunung_Kawi,_Tampaksiring,_Bali_(492096070).jpg",
+    "sourceOriginal": "https://upload.wikimedia.org/wikipedia/commons/6/67/Gunung_Kawi%2C_Tampaksiring%2C_Bali_%28492096070%29.jpg",
+    "author": "yeowatzup",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "changes": "Resized to fit within 1440 pixels wide and recompressed as WebP (quality 74). A decorative 960-pixel-wide background variant uses quality 48. No content alteration.",
+    "width": 1440,
+    "height": 1080,
+    "bytes": 514248,
+    "subject": "Two worshippers praying beside a stone water spout at Gunung Kawi.",
+    "projectDocumentation": false,
+    "temporaryReference": true,
+    "accessed": "2026-11-24",
+    "alt": {
+      "id": "Dua orang bersembahyang di dekat pancuran air batu di Gunung Kawi.",
+      "en": "Two worshippers praying beside a stone water spout at Gunung Kawi."
+    },
+    "visuallyVerified": true
+  },
+  {
+    "id": "gunung-kawi-terraces",
+    "file": "gunung-kawi-terraces.webp",
+    "publicPath": "/images/reference/gunung-kawi-terraces.webp",
+    "sourceTitle": "File:Gunung Kawi Rice Terrace Tampaksiring 1.jpg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Gunung_Kawi_Rice_Terrace_Tampaksiring_1.jpg",
+    "sourceOriginal": "https://upload.wikimedia.org/wikipedia/commons/6/6c/Gunung_Kawi_Rice_Terrace_Tampaksiring_1.jpg",
+    "author": "Davenbelle (Wikimedia Commons user)",
+    "license": "Public domain",
+    "licenseUrl": "https://commons.wikimedia.org/wiki/File:Gunung_Kawi_Rice_Terrace_Tampaksiring_1.jpg",
+    "changes": "Resized to fit within 1440 pixels wide and recompressed as WebP (quality 74). A decorative 960-pixel-wide background variant uses quality 48. No content alteration.",
+    "width": 1440,
+    "height": 1080,
+    "bytes": 153916,
+    "subject": "Terraced rice fields with coconut palms near Gunung Kawi Tampaksiring.",
+    "projectDocumentation": false,
+    "temporaryReference": true,
+    "accessed": "2026-11-24",
+    "alt": {
+      "id": "Sawah berundak dengan pohon kelapa di dekat Gunung Kawi Tampaksiring.",
+      "en": "Terraced rice fields with coconut palms near Gunung Kawi Tampaksiring."
+    },
+    "visuallyVerified": true
+  },
+  {
+    "id": "gunung-kawi-07",
+    "file": "gunung-kawi-07.webp",
+    "publicPath": "/images/reference/gunung-kawi-07.webp",
+    "sourceTitle": "File:Bali - Gunung Kawi (2025) - img 01.jpg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Bali_-_Gunung_Kawi_(2025)_-_img_01.jpg",
+    "sourceOriginal": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Bali_-_Gunung_Kawi_%282025%29_-_img_01.jpg",
+    "author": "Chainwit.",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "changes": "Resized to fit within 1440 pixels wide and recompressed as WebP (quality 76). A decorative 960-pixel-wide background variant uses quality 48. No content alteration.",
+    "width": 1440,
+    "height": 1080,
+    "bytes": 629570,
+    "subject": "Four rock-cut candi in arched niches at Gunung Kawi under a clear sky, with the courtyard in front.",
+    "projectDocumentation": false,
+    "temporaryReference": true,
+    "accessed": "2026-11-24",
+    "alt": {
+      "id": "Empat candi tebing dalam ceruk melengkung di Gunung Kawi dengan halaman candi di depannya, difoto pada hari cerah.",
+      "en": "Four rock-cut candi in arched niches at Gunung Kawi, with the courtyard in front, photographed on a clear day."
+    },
+    "visuallyVerified": true
+  },
+  {
+    "id": "gunung-kawi-08",
+    "file": "gunung-kawi-08.webp",
+    "publicPath": "/images/reference/gunung-kawi-08.webp",
+    "sourceTitle": "File:Bali - Gunung Kawi (2025) - img 03.jpg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Bali_-_Gunung_Kawi_(2025)_-_img_03.jpg",
+    "sourceOriginal": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Bali_-_Gunung_Kawi_%282025%29_-_img_03.jpg",
+    "author": "Chainwit.",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "changes": "Resized to fit within 1440 pixels wide and recompressed as WebP (quality 76). A decorative 960-pixel-wide background variant uses quality 48. No content alteration.",
+    "width": 1440,
+    "height": 1080,
+    "bytes": 555562,
+    "subject": "Close view of four rock-cut candi in their niches with palms above at Gunung Kawi.",
+    "projectDocumentation": false,
+    "temporaryReference": true,
+    "accessed": "2026-11-24",
+    "alt": {
+      "id": "Tampak dekat empat candi tebing dalam ceruknya dengan pohon kelapa di atasnya di Gunung Kawi.",
+      "en": "Close view of four rock-cut candi in their niches with palms above at Gunung Kawi."
     },
     "visuallyVerified": true
   }

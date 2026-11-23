@@ -2,17 +2,17 @@
 // Keep dedicated slots empty when the matching subject or panorama has not been photographed.
 export const media = {
   hero: {
-    src: "/images/reference/gunung-kawi-03.webp",
+    src: "/images/reference/gunung-kawi-07.webp",
     path: "/images/home/hero-gunung-kawi.jpg",
-    id: "GK—01",
+    id: "GK01",
   },
   introduction: {
     src: "/images/reference/gunung-kawi-02.webp",
     path: "/images/home/pakerisan-valley.jpg",
-    id: "GK—02",
+    id: "GK02",
   },
   east: {
-    src: "/images/reference/gunung-kawi-03.webp",
+    src: "/images/reference/gunung-kawi-07.webp",
     path: "/images/home/candi-timur.jpg",
     id: "P05",
   },
@@ -33,14 +33,29 @@ export const media = {
     id: "P08",
   },
   history: {
-    src: "/images/reference/gunung-kawi-01.webp",
+    src: "/images/reference/gunung-kawi-02.webp",
     path: "/images/history/candi-tebing.jpg",
-    id: "GK—03",
+    id: "GK03",
   },
-  information: {
-    src: null,
-    path: "/images/information/denah-kawasan.jpg",
-    id: "GK—04",
+  historyTemples: {
+    src: "/images/reference/gunung-kawi-08.webp",
+    path: "/images/history/kelompok-candi.jpg",
+    id: "GK04",
+  },
+  historyNiches: {
+    src: "/images/reference/gunung-kawi-05.webp",
+    path: "/images/history/ceruk-candi.jpg",
+    id: "GK05",
+  },
+  historyWorship: {
+    src: "/images/reference/gunung-kawi-06.webp",
+    path: "/images/history/pancuran-air.jpg",
+    id: "GK06",
+  },
+  terraces: {
+    src: "/images/reference/gunung-kawi-terraces.webp",
+    path: "/images/location/sawah-berundak.jpg",
+    id: "GK07",
   },
   tour: { src: null, path: "/images/virtual-tour/preview.jpg", id: "360°" },
 } satisfies Record<string, { src: string | null; path: string; id: string }>;

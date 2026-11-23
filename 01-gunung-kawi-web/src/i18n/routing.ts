@@ -1,26 +1,18 @@
 export const locales = ["id", "en"] as const;
 export type Locale = (typeof locales)[number];
-export const pageKeys = [
-  "home",
-  "history",
-  "location",
-  "information",
-  "tour",
-] as const;
+export const pageKeys = ["home", "history", "location", "tour"] as const;
 export type PageKey = (typeof pageKeys)[number];
 export const slugs: Record<Locale, Record<PageKey, string>> = {
   id: {
     home: "",
     history: "sejarah",
     location: "lokasi",
-    information: "informasi",
     tour: "virtual-tour",
   },
   en: {
     home: "",
     history: "history",
     location: "location",
-    information: "information",
     tour: "virtual-tour",
   },
 };

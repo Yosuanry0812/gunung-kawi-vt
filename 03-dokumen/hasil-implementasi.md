@@ -25,7 +25,7 @@ Versi dipatok pada `package.json` dan `package-lock.json`. Instalasi Tailwind me
 ## 2. Struktur folder aktual
 
 ```text
-Gunung Kawi VT/
+gunung-kawi-vt/
 ├── README.md
 ├── .gitignore
 ├── 01-gunung-kawi-web/

@@ -32,3 +32,8 @@ AGENTS.md
 .ai-cache/
 graphify-out/
 .graphifyignore
+
+# Local AI Security Audit Skill
+/.agents/skills/security-audit/
+/.claude/skills/security-audit
+/skills-lock.json

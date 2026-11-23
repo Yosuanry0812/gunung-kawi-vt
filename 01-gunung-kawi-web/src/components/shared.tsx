@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowRight, ArrowUpRight, Landmark } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 import { dictionary } from "@/i18n";
 import { href, pageKeys, type Locale, type PageKey } from "@/i18n/routing";
 
@@ -37,7 +37,8 @@ export function Footer({ locale }: { locale: Locale }) {
       <div className="container">
         <div className="footer-top">
           <Link className="footer-brand" href={href(locale, "home")}>
-            <Landmark size={24} aria-hidden="true" />
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/logo.png" alt="" width={28} height={28} />
             <span>
               Gunung Kawi<small>Tampaksiring, Bali</small>
             </span>
@@ -49,13 +50,6 @@ export function Footer({ locale }: { locale: Locale }) {
               </Link>
             ))}
           </nav>
-          <Link
-            className="text-link"
-            href={`${href(locale, "information")}#photo-credits`}
-          >
-            {d.common.photoCredits}
-            <ArrowRight size={15} aria-hidden="true" />
-          </Link>
         </div>
         <div className="footer-bottom">
           <p>{d.footer.project}</p>

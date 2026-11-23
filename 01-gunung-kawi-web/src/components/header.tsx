@@ -2,7 +2,7 @@
 import Link from "next/link";
 import { useEffect, useRef, useState, useSyncExternalStore } from "react";
 import { usePathname } from "next/navigation";
-import { ArrowUpRight, Landmark, Menu, X } from "lucide-react";
+import { ArrowUpRight, Menu, X } from "lucide-react";
 import { dictionary } from "@/i18n";
 import { href, pageKeys, resolvePage, type Locale } from "@/i18n/routing";
 
@@ -125,7 +125,8 @@ export function Header({ locale }: { locale: Locale }) {
           onClick={() => setOpen(false)}
         >
           <span className="brand-symbol" aria-hidden="true">
-            <Landmark size={28} strokeWidth={1.6} />
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/logo.png" alt="" width={48} height={48} />
           </span>
           <span>
             Gunung Kawi<small>{d.home.brandSubtitle}</small>

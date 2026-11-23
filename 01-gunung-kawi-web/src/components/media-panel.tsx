@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { ZoomablePhoto } from "./zoomable-photo";
 import { ImageIcon } from "lucide-react";
 import { media, type MediaKey } from "@/content/media";
 import { photographByPath } from "@/content/photography";
@@ -23,12 +24,21 @@ export function MediaPanel({
   return (
     <figure className={`media-panel ${className}`}>
       {item.src ? (
-        <Image
+        <ZoomablePhoto
           src={item.src}
           alt={photograph?.alt[locale] ?? caption ?? d.common.photoAlt}
-          fill
           sizes="(max-width: 800px) calc(100vw - 40px), (max-width: 1100px) 55vw, 620px"
-          preload={priority}
+          priority={priority}
+          label={d.common.zoomPhoto}
+          closeLabel={d.common.closePhoto}
+          credit={
+            photograph
+              ? {
+                  href: photograph.sourcePage,
+                  text: `${d.common.photoCredit}: ${photograph.author}, ${photograph.license}`,
+                }
+              : undefined
+          }
         />
       ) : (
         <div className="media-placeholder">
@@ -48,7 +58,7 @@ export function MediaPanel({
               target="_blank"
               rel="noopener noreferrer"
             >
-              {d.common.photoCredit}: {photograph.author} · {photograph.license}
+              {d.common.photoCredit}: {photograph.author}, {photograph.license}
             </a>
           )}
         </figcaption>
